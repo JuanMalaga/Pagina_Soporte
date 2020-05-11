@@ -1,0 +1,84 @@
+/* PATRON DE COLORES */
+$principal: #e78a10;
+$secundario:#218838;
+$texto:#444648;
+
+
+/* FUENTES */
+html{
+	font-size:13px; 
+}
+
+body{
+    font-family: 'Amatic SC', cursive;
+}
+
+/* MEDIA QUERY */
+@media(min-width: 768px){
+	html{
+		font-size: 20px;
+	}
+}
+
+/* SOBREESCRIBIENDO BOOTSTRAP */
+.bg-primary{
+	background-color: $principal !important;
+}
+.text-primary {
+    color: $principal !important;
+}
+
+#servidor{
+    width: 300px;
+}
+.btn-primary {
+    background-color:$principal !important;
+    border-color: darken($principal,20%) !important;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color:darken($principal,5%) !important;
+}
+.btn-primary:active{
+	background-color:darken($principal,20%) !important;
+	border-color: darken($principal,30%) !important;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 0.2rem rgba($principal,.5) !important;
+}
+
+.btn-secondary{
+    background-color:$secundario !important;
+    border-color: darken($secundario,20%) !important;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color:darken($secundario,5%) !important;
+}
+.btn-secondary:active{
+	background-color:darken($secundario,20%) !important;
+	border-color: darken($secundario,30%) !important;
+}
+.btn-secondary:focus{
+    box-shadow: 0 0 0 0.2rem rgba($secundario,.5) !important;
+}
+
+.redes{
+    width: 60px;
+}
+
+.img-fondo{ 
+    //background: url(../image/fondo1.jpg) no-repeat center ;
+    background-image: url(../image/fondo1.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+
+.img-fondo:before{
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+}
