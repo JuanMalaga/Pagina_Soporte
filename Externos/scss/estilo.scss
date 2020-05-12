@@ -1,9 +1,45 @@
 $principal: white;
 $texto: black;
-$secundario: orange;
+$secundario: blue;
 
-body{
-    background: $principal;
-    color: $texto;
-    border: 5px solid $secundario;
+body {
+  background: $principal;
+  color: $texto;
+}
+
+#titulo {
+  color: white;
+}
+
+.nuevo a {
+  position: relative;
+  bottom: 70px;
+  font-family: "Anton", sans-serif;
+  width: 960px;
+  height: 160px;
+  text-decoration: none;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.nuevo a:hover {
+  color: rgb(116, 116, 212);
+  -webkit-text-stroke: 1px black;
+}
+
+.bd-example {
+  position: relative;
+  top: 70px;
+}
+
+.estatico {
+  position: fixed;
+  z-index: 999;
+  width: 1365px;
+}
+
+.contenido {
+  height: 400px;
+  border: 1px solid yellow;
 }
