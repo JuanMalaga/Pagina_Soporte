@@ -1,0 +1,95 @@
+*,*:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor-carga{
+    background-color: rgb(248, 248, 248);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
+    transition: all 2.5s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 2.5px solid #ccc;
+    border-top-color: rgb(18, 19, 83);
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+#social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+    padding-left: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+.icon-facebook2{
+    background: rgb(71, 71, 153);
+}
+
+.icon-whatsapp{
+    background: rgb(47, 133, 73);
+}
+
+.icon-instagram{
+    background: rgb(105, 50, 107);
+}
+
+.icon-twitter{
+    background: rgb(46, 129, 184);
+}
+
+.icon-youtube{
+    background: rgb(185, 68, 68);
+}
