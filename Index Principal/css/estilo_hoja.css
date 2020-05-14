@@ -1,0 +1,18 @@
+body {
+  background: rgba(235, 235, 247, 0.959);
+  color: rgba(60, 63, 62, 0.719);
+  width: 100%; }
+
+#cabimg1 img {
+  width: 50px;
+  height: auto; }
+
+#cabimg2 img {
+  width: 80px;
+  height: auto; }
+
+#cabimg3 img {
+  width: 200px;
+  height: auto; }
+
+/*# sourceMappingURL=estilo_hoja.css.map */

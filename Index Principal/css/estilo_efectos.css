@@ -18,7 +18,7 @@
 }
 
 #carga{
-    border: 2.5px solid #ccc;
+    border: 2.8px solid #ccc;
     border-top-color: rgb(18, 19, 83);
     border-top-style: groove;
     height: 100px;
@@ -34,6 +34,16 @@
     -webkit-animation: girar 1.5s linear infinite;
     -o-animation: girar 1.5s linear infinite;
     animation: girar 1.5s linear infinite;
+}
+
+#contenedor-carga img{
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 @keyframes girar{
@@ -52,7 +62,7 @@
     z-index: 1000;
 }
 
-.icon{
+.iconono{
     color: white;
     text-decoration: none;
     padding: .7rem;
@@ -60,18 +70,20 @@
     transition: all .5s;
 }
 
-.icon:first-child{
+.iconono:first-child{
     border-radius: 1rem 0 0 0;
 }
 
-.icon:last-child{
+.iconono:last-child{
     border-radius: 0 0 0 1rem;
 }
 
-.icon:hover{
+.iconono:hover{
     padding-left: 3rem;
     border-radius: 1rem 0 0 1rem;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    text-decoration: none;
+    color: white;
 }
 
 .icon-facebook2{
