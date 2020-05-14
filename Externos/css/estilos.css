@@ -5,21 +5,6 @@ body {
 #titulo {
   color: white; }
 
-.nuevo a {
-  position: relative;
-  bottom: 70px;
-  font-family: "Anton", sans-serif;
-  width: 960px;
-  height: 160px;
-  text-decoration: none;
-  font-size: 60px;
-  color: white;
-  -webkit-text-stroke: 1px black; }
-
-.nuevo a:hover {
-  color: #7474d4;
-  -webkit-text-stroke: 1px black; }
-
 .bd-example {
   position: relative;
   top: 70px; }
@@ -32,5 +17,38 @@ body {
 .contenido {
   height: 400px;
   border: 1px solid yellow; }
+
+.nav-mytabs {
+  margin-top: 2rem; }
+
+.nav-mytabs li:not(:last-child) {
+  margin-right: 7px; }
+
+.nav-mytabs a {
+  position: relative;
+  top: 4px;
+  padding: 10px 25px;
+  border-radius: 2px 2px 0 0;
+  background: white;
+  color: black;
+  opacity: 0.7;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.nav-mytabs a.active,
+.nav-mytabs a:hover {
+  opacity: 1;
+  top: 0; }
+
+.mytab-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 0 4px 4px 4px;
+  background: #6767ca; }
+
+li .tab {
+  background: #7373d3;
+  color: white; }
 
 /*# sourceMappingURL=estilos.css.map */
