@@ -48,7 +48,22 @@ body {
   background: #6767ca; }
 
 li .tab {
-  background: #7373d3;
+  background: #6767ca;
   color: white; }
+
+.table {
+  position: relative;
+  right: 40px;
+  width: 1100px;
+  top: 0px;
+  bottom: -55px;
+  z-index: 0; }
+
+.modal-backdrop {
+  z-index: 1; }
+
+.modal-content {
+  z-index: 2;
+  background: yellow; }
 
 /*# sourceMappingURL=estilos.css.map */
