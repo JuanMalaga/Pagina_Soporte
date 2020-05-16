@@ -1,14 +1,9 @@
 //-------------------------------------------------------
 //                  PATRON DE COLORES
 //-------------------------------------------------------
-$texto:rgba(60, 63, 62, 0.719);
-$principal: rgba(235, 235, 247, 0.959);
+$primary: rgba(13, 14, 17, 0.938);
+$secondary: rgb(32, 31, 31);
 
-body{
-    background: $principal;
-    color: $texto;
-    width: 100%;
-}
 
 #cabimg1 img{
     width: 50px;
@@ -16,11 +11,37 @@ body{
 }
 
 #cabimg2 img{
-    width: 80px;
+    width: 50px;
     height: auto;
 }
 
 #cabimg3 img{
-    width: 200px;
+    width: 100px;
     height: auto;
 }
+
+@media screen and (min-width: 0px){
+    #Capacitaciones{
+        font-size: 10px;
+    }
+    
+    #mapa{
+        width: 140px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 550px){
+    #mapa{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 980px){
+    #mapa{
+        width: 450px;
+        height: 250px;
+    }
+}
+

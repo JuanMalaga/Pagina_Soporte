@@ -1,18 +1,29 @@
-body {
-  background: rgba(235, 235, 247, 0.959);
-  color: rgba(60, 63, 62, 0.719);
-  width: 100%; }
-
 #cabimg1 img {
   width: 50px;
   height: auto; }
 
 #cabimg2 img {
-  width: 80px;
+  width: 50px;
   height: auto; }
 
 #cabimg3 img {
-  width: 200px;
+  width: 100px;
   height: auto; }
+
+@media screen and (min-width: 0px) {
+  #Capacitaciones {
+    font-size: 10px; }
+
+  #mapa {
+    width: 140px;
+    height: 150px; } }
+@media screen and (min-width: 550px) {
+  #mapa {
+    width: 200px;
+    height: 150px; } }
+@media screen and (min-width: 980px) {
+  #mapa {
+    width: 450px;
+    height: 250px; } }
 
 /*# sourceMappingURL=estilo_hoja.css.map */
