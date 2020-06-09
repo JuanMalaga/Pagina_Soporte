@@ -1,9 +1,56 @@
+header div {
+  background: #fffefe; }
+
+header nav {
+  background: rgba(124, 233, 169, 0.76); }
+
+.footer {
+  background: #383d42;
+  font-size: 1.1rem;
+  color: #fffefe; }
+
+.parrafo0 {
+  font-size: .72rem; }
+
+.informacion {
+  padding: .4rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-size: .9rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  cursor: pointer; }
+
+.informacion:hover {
+  border-radius: 15px;
+  border: 1px solid #fff; }
+
+#iconito {
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center; }
+
+@media screen and (min-width: 765px) {
+  .informacion {
+    margin-top: .5rem; } }
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 #cabimg1 img {
   width: 50px;
   height: auto; }
 
+#cabimg2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 #cabimg2 img {
-  width: 50px;
+  width: 8rem;
   height: auto; }
 
 #cabimg3 img {
@@ -11,19 +58,17 @@
   height: auto; }
 
 @media screen and (min-width: 0px) {
-  #Capacitaciones {
-    font-size: 10px; }
-
-  #mapa {
-    width: 140px;
-    height: 150px; } }
-@media screen and (min-width: 550px) {
-  #mapa {
-    width: 200px;
-    height: 150px; } }
-@media screen and (min-width: 980px) {
-  #mapa {
-    width: 450px;
-    height: 250px; } }
+  #mapa iframe {
+    width: 290px;
+    height: 150px;
+    margin-top: .3rem; } }
+@media screen and (min-width: 992px) {
+  #mapa iframe {
+    width: 225px;
+    height: 200px; } }
+@media screen and (min-width: 1200px) {
+  #mapa iframe {
+    width: 260px;
+    height: 200px; } }
 
 /*# sourceMappingURL=estilo_hoja.css.map */

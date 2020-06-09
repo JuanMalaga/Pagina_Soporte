@@ -1,6 +1,7 @@
 *,*:after, *:before{
     margin: 0;
     padding: 0;
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -11,6 +12,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
+
     -webkit-transition: all 2.5s ease;
     -o-transition: all 2.5s ease;
     transition: all 2.5s ease;
@@ -31,6 +33,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
+
     -webkit-animation: girar 1.5s linear infinite;
     -o-animation: girar 1.5s linear infinite;
     animation: girar 1.5s linear infinite;
@@ -52,12 +55,21 @@
     z-index: 1001;
 }
 
+@media screen and (max-width: 1200px){
+    #social-bar{
+        display:none;
+    }
+}
+
 .iconono{
     color: white;
     text-decoration: none;
     padding: .7rem;
     display: flex;
-    transition: all .5s;
+
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .iconono:first-child{
@@ -95,3 +107,98 @@
 .icon-youtube{
     background: rgb(185, 68, 68);
 }
+
+.redes{
+    text-align: center;
+    margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 765px){
+    .redes{
+       text-align: left;
+    }
+}
+
+.redes a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: .7rem;
+    border-radius: 10%;
+
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.redes a:hover{
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 0px){
+    #grande{
+        display: none;
+    }
+
+    #pequeño{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 765px){
+    #pequeño{
+        justify-content: left;     
+    }
+
+    #pequeño p{
+        padding: .6rem .6rem .6rem 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #pequeño{
+        display: none;
+    }  
+
+    #grande{
+        display: flex;
+    }
+    
+    #grande p{
+        top:.3rem;
+    }
+}
+
+.text-animacion{
+    float: left;
+    position: relative;
+    padding: .6rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-animacion span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #383d42;
+    border-left: 1px solid #000;
+
+    -webkit-animation: maquina 5s infinite alternate steps(25);
+    -o-animation: maquina 5s infinite alternate steps(25);
+    animation: maquina 5s infinite alternate steps(25);
+}
+
+.text-animacion img{
+    width: 2rem;
+    margin-right: .3rem;
+}
+
+@keyframes maquina{
+    from{width: 0.6rem;}
+    to{width: 13.2rem;}
+}
+
